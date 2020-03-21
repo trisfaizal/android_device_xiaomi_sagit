@@ -57,3 +57,4 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, vendor/xiaomi/sagit/sagit-vendor.mk)
 $(call inherit-product, vendor/gapps/common/common-vendor.mk)
 $(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
+$(call inherit-product-if-exists, vendor/LibsAlexey60fps/config.mk)
