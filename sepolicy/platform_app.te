@@ -1,2 +1,7 @@
 # FPS tile
 allow platform_app sysfs_fps:file { getattr open read };
+
+#SysInfo
+allow platform_app sysfs_kgsl:file { getattr open read };
+allow platform_app sysfs_battery_supply:dir search;
+allow platform_app sysfs_battery_supply:file { getattr open read };
