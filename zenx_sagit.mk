@@ -21,8 +21,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sagit device
 $(call inherit-product, device/xiaomi/sagit/device.mk)
 
-# Inherit some common havoc stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit some common ZenX stuff.
+$(call inherit-product, vendor/zenx/config/common_full_phone.mk)
 
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/apps/MiuiCamera/config.mk)
@@ -30,15 +30,11 @@ $(call inherit-product-if-exists, vendor/apps/MiuiCamera/config.mk)
 # ScreenRecorder
 $(call inherit-product-if-exists, vendor/apps/OPScreenRecord/config.mk)
 
-PRODUCT_NAME := havoc_sagit
+PRODUCT_NAME := zenx_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
 PRODUCT_MANUFACTURER := Xiaomi
-
-#Havoc INITIALIZE
-HAVOC_BUILD_TYPE := Unofficial
-HAVOC_MAINTAINER := trisf
 
 TARGET_BOOT_ANIMATION_RES := 1080
 USE_PIXEL_CHARGING := true
