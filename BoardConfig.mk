@@ -33,7 +33,8 @@ TARGET_SCREEN_DENSITY := 480
 
 # SELinux
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+SELINUX_IGNORE_NEVEALLOWS := true
 
 # Inherit from proprietary files
 include vendor/xiaomi/sagit/BoardConfigVendor.mk
-include vendor/miuicamera/common/BoardConfigVendor.mk
+
