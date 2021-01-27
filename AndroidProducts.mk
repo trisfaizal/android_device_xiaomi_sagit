@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_sagit.mk
+    $(LOCAL_DIR)/aosip_sagit.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_sagit-user \
-    derp_sagit-userdebug \
-    derp_sagit-eng
+    aosip_sagit-user \
+    aosip_sagit-userdebug \
+    aosip_sagit-eng

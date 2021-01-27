@@ -21,20 +21,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from sagit device
 $(call inherit-product, device/xiaomi/sagit/device.mk)
 
-# Inherit some common Derp stuff.
+# Inherit some common AOSiP stuff.
 $(call inherit-product, vendor/aosip/config/common_full_phone.mk)
 
 # MiuiCamera
 $(call inherit-product-if-exists, vendor/apps/MiuiCamera/config.mk)
 
-PRODUCT_NAME := derp_sagit
+PRODUCT_NAME := aosip_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 6
 PRODUCT_MANUFACTURER := Xiaomi
-
-# Build type
-DERP_BUILD_ZIP_TYPE := VANILLA
 
 TARGET_BOOT_ANIMATION_RES := 1080
 USE_PIXEL_CHARGING := true
